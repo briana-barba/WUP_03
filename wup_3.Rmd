@@ -62,4 +62,4 @@ The middle-back and front-back confidence intervals are less than zero than the 
 
 ## Conclusions
 
-
+Based on all data provided, the people within the back row drank the most alcohol. Most people were sat in the middle row being about two times more than the front and back rows. 
