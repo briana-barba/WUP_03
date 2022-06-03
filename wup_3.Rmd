@@ -46,6 +46,19 @@ favstats(alcohol~Seat,data=davisdata)
 The mean for the people sitting in the back seats is three times higher than the people in the middle seats and increasingly higher for the people in the front seats.
 
 ## Inferential Tests
+Since the p value from one way annova was such 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+Since the p value from one way annova was such a smaller number we are going to follow up with tukeyhsd.
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+The middle-back and front-back confidence intervals are less than zero than the results would be significantly different. 
 
 ## Conclusions
 
